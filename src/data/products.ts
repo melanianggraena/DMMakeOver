@@ -1,0 +1,61 @@
+import { Product } from '../types';
+
+export const products: Product[] = [
+  {
+    id: 'p1',
+    name: 'Powerstay Matte Powder Foundation',
+    price: 215000,
+    priceFormatted: 'IDR 215.000',
+    badge: 'BEST SELLER',
+    rating: 4.9,
+    reviewCount: '1.8k',
+    shadeCount: 12,
+    image: 'https://images.unsplash.com/photo-1631214524020-3c69f3f08ee0?w=400&q=80',
+    category: 'WAJAH',
+  },
+  {
+    id: 'p2',
+    name: 'Hydrastay Lite Glow Cushion',
+    price: 230000,
+    priceFormatted: 'IDR 230.000',
+    badge: 'NEW FORMULA',
+    rating: 4.8,
+    reviewCount: '920',
+    shadeCount: 8,
+    image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&q=80',
+    category: 'WAJAH',
+    isNew: true,
+  },
+  {
+    id: 'p3',
+    name: 'Color Hypnose Creamy Lipmatte',
+    price: 125000,
+    priceFormatted: 'IDR 125.000',
+    badge: 'ICONIC',
+    rating: 4.9,
+    reviewCount: '3.4k',
+    shadeCount: 14,
+    image: 'https://images.unsplash.com/photo-1625093823670-19a7e9ef0d37?w=400&q=80',
+    category: 'BIBIR',
+  },
+  {
+    id: 'p4',
+    name: 'Powerstay 24H Liquid Foundation',
+    price: 205000,
+    priceFormatted: 'IDR 205.000',
+    badge: 'PRO PICK',
+    rating: 5.0,
+    reviewCount: '4.2k',
+    shadeCount: 20,
+    image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&q=80',
+    category: 'WAJAH',
+  },
+];
+
+export const filterCategories: Array<{ label: string; value: 'ALL' | 'WAJAH' | 'MATA' | 'BIBIR' | 'KULIT' }> = [
+  { label: 'SEMUA', value: 'ALL' },
+  { label: 'WAJAH', value: 'WAJAH' },
+  { label: 'MATA', value: 'MATA' },
+  { label: 'BIBIR', value: 'BIBIR' },
+  { label: 'KULIT', value: 'KULIT' },
+];
